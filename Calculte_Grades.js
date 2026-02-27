@@ -6,7 +6,20 @@ D: 60-69
 F: 0-59
  */ 
 
-let marks = 25
+let marks = "dss"
+
+// edge case validation
+if(typeof(marks) != "number"){
+    console.log("Please enter marks in number")
+    return
+}
+// edge case validation
+if(marks<0 || marks > 100){
+    console.log("Please enter valid marks")
+    return
+}
+
+
 if(marks>=90 && marks<=100){
     console.log("Student Received Grade A")
 } else if(marks>=80 && marks<=89){
